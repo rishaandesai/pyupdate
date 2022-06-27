@@ -31,7 +31,7 @@ def install(pkg):
         clear()
 
     loader()
-    os.system('sudo installer -pkg ' + pkg + ' -target /usr/local/bin/python3')
+    os.system('sudo installer -pkg ' + pkg + ' -target /usr/local/bin/python3 -dumplog')
 
 def download():
     r = requests.get('https://www.python.org/downloads/')
