@@ -6,19 +6,7 @@ from os import system, name
 def install(pkg):
     def loader():
         print('Downloading package...')
-        bar = [
-            " [=     ]",
-            " [ =    ]",
-            " [  =   ]",
-            " [   =  ]",
-            " [    = ]",
-            " [     =]",
-            " [    = ]",
-            " [   =  ]",
-            " [  =   ]",
-            " [ =    ]",
-            " [=     ]"
-        ]
+        bar = [" [=     ]", " [ =    ]", " [  =   ]", " [   =  ]", " [    = ]", " [     =]", " [    = ]", " [   =  ]", " [  =   ]", " [ =    ]", " [=     ]"]
         i = 0
 
         def clear(): #This function clears the screen
