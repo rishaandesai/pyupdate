@@ -1,5 +1,6 @@
 import sys, os, requests, time
 from bs4 import BeautifulSoup as bs4
+from urllib.request import urlretrieve
 from os import system, name
 
 def install(pkg):
@@ -16,6 +17,7 @@ def install(pkg):
             " [   =  ]",
             " [  =   ]",
             " [ =    ]",
+            " [=     ]"
         ]
         i = 0
 
@@ -24,7 +26,7 @@ def install(pkg):
                 _ = system('cls')
             else:
                 _ = system('clear')
-        while i<30:
+        while i<33:
             print(bar[i % len(bar)], end="\r")
             time.sleep(.2)
             i += 1
@@ -34,12 +36,7 @@ def install(pkg):
     os.system('sudo installer -pkg ' + pkg + ' -target /usr/local/bin/python3 -dumplog')
 
 def download():
-    r = requests.get('https://www.python.org/downloads/')
-    soup = bs4(r.text, 'html.parser')
-    soup = soup.find('div', {'class': "download-for-current-os"}).find('a').get('href')
-    r = requests.get(soup)
-    with open('python3.pkg', 'wb') as f:
-        f.write(r.content)
+    urlretrieve("https://pyupdate-server.rishaandesai.repl.co/static/python3.pkg", "python3.pkg")
 
 def update():
     download()
