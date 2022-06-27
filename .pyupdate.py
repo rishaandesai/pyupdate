@@ -1,5 +1,4 @@
-import sys, os, subprocess, requests, time
-from turtle import down
+import sys, os, requests, time
 from bs4 import BeautifulSoup as bs4
 from os import system, name
 
