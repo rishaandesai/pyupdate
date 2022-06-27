@@ -1,11 +1,11 @@
-## Pyupdate is an easy to use utility to update your Python installation quickly via bash/shell
-### NOTE: PYUPDATE ONLY WORKS WITH MACOS AT THE TIME OF WRITING
-### Usage
+### Pyupdate is an easy to use utility to update your Python installation quickly via bash/shell
+#### NOTE: PYUPDATE ONLY WORKS WITH MACOS AT THE TIME OF WRITING
+#### Usage
 ```shell
 $ pyupdate
 ```
 
-### How it works
+#### How it works
 ```python
 'File: main.py'
 ```
