@@ -1,7 +1,8 @@
-import sys, os, requests, time
-from bs4 import BeautifulSoup as bs4
+import sys, os, requests, time, ssl
 from urllib.request import urlretrieve
 from os import system, name
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def install(pkg, log=True):
     def loader():
