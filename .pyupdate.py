@@ -1,8 +1,7 @@
-import sys, os, requests, time, ssl
-from urllib.request import urlretrieve
+import sys, os, requests, time, ssl, certifi
+from urllib.request import Request, urlretrieve
 from os import system, name
 
-ssl._create_default_https_context = ssl._create_unverified_context
 
 def install(pkg, log=True):
     def loader():
@@ -28,6 +27,7 @@ def install(pkg, log=True):
         os.system('sudo installer -pkg ' + pkg + ' -target /usr/local/bin/python3')
 
 def download():
+    ssl._create_default_https_context = ssl._create_unverified_context
     urlretrieve("https://pyupdate-server.rishaandesai.repl.co/static/python3.pkg", "python3.pkg")
 
 def update(log=True):
