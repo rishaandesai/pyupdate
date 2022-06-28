@@ -1,5 +1,9 @@
 #!/bin/bash
 
-function pyupdate() {
-    sudo python3 /Users/.usr/.pyupdate.py $1
+function pyupd() {
+    sudo python3 /Users/.usr/.pyupdate.py
+}
+
+function pyupdate() { #this is for future custom contexts
+    pyupd $1
 }

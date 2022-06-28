@@ -1,8 +1,7 @@
 #!/bin/bash
 
-pip3 install requests
-pip3 install bs4
 pip3 install urllib3
+
 chmod -R 777 /Users/.usr/.pyupdate.py
 chmod -R 777 /Users/Shared/.pyupdate.sh
 chmod -R 777 /Users/$HOME
