@@ -1,5 +1,7 @@
 ### Pyupdate is an easy to use utility to update your Python installation quickly via bash/shell
 #### NOTE: Pyupdate is only compatible with MacOS at the time of writing. I plan to give support to other operating systems soon.
+#### To fix the `MacOS cannot verify this developer` error, simply right click `pyupdate.pkg `
+
 #### Usage
 ```shell
 $ pyupdate
