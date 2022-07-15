@@ -1,7 +1,7 @@
 import sys, os, time, ssl
 from urllib.request import urlretrieve
 from os import system, name
-from sys import argv, exit
+import requests, bs4
 
 def loader():
         print('Downloading package...')
@@ -39,17 +39,4 @@ def update():
     os.system('reset')
     sys.exit()
 
-try:
-    if argv[1] == '--help':
-        print('usage: pyupd [--update] [--version] [--help]')
-        exit()
-    elif argv[1] == '--version':
-        print('pyupdate v1.0.1s[patch]')
-        exit()
-    elif argv[1] == '--update':
-        update()
-    else:
-        print('usage: pyupd [--update] [--version] [--help]')
-        exit()
-except:
-    print('usage: pyupd [--update] [--version] [--help]')
+update()
