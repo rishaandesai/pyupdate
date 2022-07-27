@@ -48,6 +48,8 @@ try:
         exit()
     elif argv[1] == '--update':
         update()
+    elif argv[1] == '':
+        update()
     else:
         print('usage: pyupd [--update] [--version] [--help]')
         exit()
