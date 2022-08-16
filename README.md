@@ -2,10 +2,14 @@
 #### NOTE: Pyupdate is only compatible with MacOS at the time of writing. I plan to give support to other operating systems soon.
 #### To fix the `MacOS cannot verify this developer` error, simply right click `pyupdate.pkg `
 
+![](https://github.com/Blackhole1123/pyupdate/raw/master/PyUpdate.gif)
+
 #### Usage
 ```shell
 $ pyupdate
 ```
+
+
 
 #### How it works
 ```python
